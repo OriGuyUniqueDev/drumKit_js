@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;900&display=swap");
 // Colors Variables
 $bgColorLeft: #43c6ac;
 $bgColorRight: #191654;
@@ -12,6 +12,9 @@ $btnSoundFontSize: 1.75rem;
 $btnTextMarginBottom: 1.5rem;
 $btnShadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
 $authorTextColor: rgba(255, 255, 255, 0.2);
+$gridColumns: 25rem;
+$gridRows: 14.375rem;
+$gridGap: 2rem;
 * {
 	margin: 0;
 	padding: 0;
@@ -24,61 +27,116 @@ body {
 		#43c6ac 0.01%,
 		$bgColorRight 100%
 	);
-    background-repeat: none;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    font-family: 'Montserrat Alternates', sans-serif;
-    .author{
-        color: $authorTextColor;
-    }
+	background-repeat: none;
+	background-size: cover;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	font-family: "Montserrat Alternates", sans-serif;
+	.author {
+		color: $authorTextColor;
+	}
 }
 #root {
 	.main-container {
-        margin-top: 5.5rem;
+		margin-top: 5.5rem;
 		.main-container-buttons {
-            .btn-wrapper{
-                display: grid;
-                grid-template-columns: repeat(3,25rem);
-                grid-template-rows: repeat(3,14.375rem);
-                gap: 2rem;
-                .btn{
-                    background-color: $btnBgColor ;
-                    border: none;
-                    border-radius: $btnBorderRadius;
-                    box-shadow: $btnShadow;
-                    backdrop-filter: blur(11px);
-                    font-family: 'Montserrat Alternates', sans-serif;
-                    transition: background-color 0.35s ease-in-out,transform 0.1s ease-out;
-                    .text-number{
-                        margin-bottom: $btnTextMarginBottom;
-                        font-size: $btnTextFontSize;
-                    }
-                    .text-sound{
-                        font-size: $btnSoundFontSize;
-                    }
-                }
-                .btn:hover{
-                    background-color: $btnBgColorHover;
-                }
-                .btn:active{
-                    transform: scale(1.05);
-                }
-            }
+			.btn-wrapper {
+				display: grid;
+				grid-template-columns: repeat(3, $gridColumns);
+				grid-template-rows: repeat(3, $gridRows);
+				gap: $gridGap;
+				.btn {
+					background-color: $btnBgColor;
+					border: none;
+					border-radius: $btnBorderRadius;
+					box-shadow: $btnShadow;
+					backdrop-filter: blur(11px);
+					font-family: "Montserrat Alternates", sans-serif;
+					transition: background-color 0.35s ease-in-out,
+						transform 0.1s ease-out;
+					.text-number {
+						margin-bottom: $btnTextMarginBottom;
+						font-size: $btnTextFontSize;
+					}
+					.text-sound {
+						font-size: $btnSoundFontSize;
+					}
+				}
+				.btn:hover {
+					background-color: $btnBgColorHover;
+				}
+				.btn:active {
+					transform: scale(1.05);
+				}
+			}
 		}
 	}
-    .root-bg-text{
-        position:absolute;
-        z-index: -1;
-        top: 20rem;
-        font-size: 265px;
-        white-space: nowrap;
-        left: 50%;
-        font-weight: 700;
-        transform: translateX(-50%);
-        color: $bgColorText ;
-        
-    }
-    
+	.root-bg-text {
+		position: absolute;
+		z-index: -1;
+		top: 20rem;
+		font-size: 265px;
+		white-space: nowrap;
+		left: 50%;
+		font-weight: 700;
+		transform: translateX(-50%);
+		color: $bgColorText;
+	}
+}
+@media only screen and (max-width: 600px) {
+	$bgColorLeft: #43c6ac;
+	$bgColorRight: #191654;
+	$bgColorText: rgba(217, 217, 217, 0.1);
+	$btnBgColor: rgba(93, 162, 198, 0.45);
+	$btnBgColorHover: rgba(93, 162, 198, 0.8);
+	$btnTextColor: rgba(0, 0, 0, 1);
+	$btnTextFontSize: 2.5rem;
+	$btnBorderRadius: 1rem;
+	$btnSoundFontSize: 1.2rem;
+	$btnTextMarginBottom: 1.5rem;
+	$btnShadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
+	$authorTextColor: rgba(255, 255, 255, 0.2);
+	$gridColumns:  8rem;
+	$gridRows: 10rem;
+	$gridGap: 1rem;
+	#root {
+		.main-container {
+			margin-top: 5.5rem;
+			.main-container-buttons {
+				.btn-wrapper {
+					display: grid;
+					grid-template-columns: repeat(3, $gridColumns);
+					grid-template-rows: repeat(3,$gridRows);
+					gap: $gridGap;
+					.btn {
+						background-color: $btnBgColor;
+						border: none;
+						border-radius: $btnBorderRadius;
+						box-shadow: $btnShadow;
+						backdrop-filter: blur(11px);
+						font-family: "Montserrat Alternates", sans-serif;
+						transition: background-color 0.35s ease-in-out,
+							transform 0.1s ease-out;
+						.text-number {
+							margin-bottom: $btnTextMarginBottom;
+							font-size: $btnTextFontSize;
+						}
+						.text-sound {
+							font-size: $btnSoundFontSize;
+						}
+					}
+					.btn:hover {
+						background-color: $btnBgColorHover;
+					}
+					.btn:active {
+						transform: scale(1.05);
+					}
+				}
+			}
+		}
+		.root-bg-text {
+			display: none;
+		}
+	}
 }
