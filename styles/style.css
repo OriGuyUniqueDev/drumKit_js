@@ -1,1 +1,63 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
+  background-repeat: none;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body .author {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+#root .main-container {
+  margin-top: 5.5rem;
+}
+#root .main-container .main-container-buttons .btn-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 25rem);
+  grid-template-rows: repeat(3, 14.375rem);
+  gap: 2rem;
+}
+#root .main-container .main-container-buttons .btn-wrapper .btn {
+  background-color: rgba(93, 162, 198, 0.45);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
+  -webkit-backdrop-filter: blur(11px);
+          backdrop-filter: blur(11px);
+  font-family: "Montserrat Alternates", sans-serif;
+  transition: background-color 0.35s ease-in-out, transform 0.1s ease-out;
+}
+#root .main-container .main-container-buttons .btn-wrapper .btn .text-number {
+  margin-bottom: 1.5rem;
+  font-size: 3.75rem;
+}
+#root .main-container .main-container-buttons .btn-wrapper .btn .text-sound {
+  font-size: 1.75rem;
+}
+#root .main-container .main-container-buttons .btn-wrapper .btn:hover {
+  background-color: rgba(93, 162, 198, 0.8);
+}
+#root .main-container .main-container-buttons .btn-wrapper .btn:active {
+  transform: scale(1.05);
+}
+#root .root-bg-text {
+  position: absolute;
+  z-index: -1;
+  top: 20rem;
+  font-size: 265px;
+  white-space: nowrap;
+  left: 50%;
+  font-weight: 700;
+  transform: translateX(-50%);
+  color: rgba(217, 217, 217, 0.1);
+}/*# sourceMappingURL=style.css.map */
