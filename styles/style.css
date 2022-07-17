@@ -64,6 +64,19 @@ body .author {
 }
 
 @media only screen and (max-width: 499px) {
+  body {
+    background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
+    background-repeat: none;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: "Montserrat Alternates", sans-serif;
+    overflow: hidden;
+  }
+  body .author {
+    color: rgba(255, 255, 255, 0.2) !important;
+  }
   #root .main-container {
     margin-top: 5.5rem;
   }
@@ -101,6 +114,19 @@ body .author {
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
+  body {
+    background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
+    background-repeat: none;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: "Montserrat Alternates", sans-serif;
+    overflow: hidden;
+  }
+  body .author {
+    color: rgba(255, 255, 255, 0.2) !important;
+  }
   #root .main-container {
     margin-top: 5.5rem;
   }
@@ -138,6 +164,19 @@ body .author {
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 700px) {
+  body {
+    background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
+    background-repeat: none;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: "Montserrat Alternates", sans-serif;
+    overflow: hidden;
+  }
+  body .author {
+    color: rgba(255, 255, 255, 0.2) !important;
+  }
   #root .main-container {
     margin-top: 5.5rem;
   }
@@ -175,6 +214,19 @@ body .author {
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 899px) {
+  body {
+    background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
+    background-repeat: none;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: "Montserrat Alternates", sans-serif;
+    overflow: hidden;
+  }
+  body .author {
+    color: rgba(255, 255, 255, 0.2) !important;
+  }
   #root .main-container {
     margin-top: 5.5rem;
   }

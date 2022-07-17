@@ -102,6 +102,25 @@ body {
 	$gridColumns:  7rem;
 	$gridRows: 7rem;
 	$gridGap: 1rem;
+	body {
+		background: linear-gradient(
+			107.56deg,
+			$bgColorLeft 0%,
+			#43c6ac 0.01%,
+			$bgColorRight 100%
+		);
+		background-repeat: none;
+		background-size: cover;
+		display: grid;
+		place-items: center;
+		height: 100vh;
+		font-family: "Montserrat Alternates", sans-serif;
+		.author {
+			color: $authorTextColor !important;
+		}
+		overflow: hidden;
+		
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
@@ -158,6 +177,25 @@ body {
 	$gridColumns:  17rem;
 	$gridRows: 13rem;
 	$gridGap: 1rem;
+	body {
+		background: linear-gradient(
+			107.56deg,
+			$bgColorLeft 0%,
+			#43c6ac 0.01%,
+			$bgColorRight 100%
+		);
+		background-repeat: none;
+		background-size: cover;
+		display: grid;
+		place-items: center;
+		height: 100vh;
+		font-family: "Montserrat Alternates", sans-serif;
+		.author {
+			color: $authorTextColor !important;
+		}
+		overflow: hidden;
+		
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
@@ -214,6 +252,25 @@ body {
 	$gridColumns:  9rem;
 	$gridRows: 9rem;
 	$gridGap: 1rem;
+	body {
+		background: linear-gradient(
+			107.56deg,
+			$bgColorLeft 0%,
+			#43c6ac 0.01%,
+			$bgColorRight 100%
+		);
+		background-repeat: none;
+		background-size: cover;
+		display: grid;
+		place-items: center;
+		height: 100vh;
+		font-family: "Montserrat Alternates", sans-serif;
+		.author {
+			color: $authorTextColor !important;
+		}
+		overflow: hidden;
+		
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
@@ -270,6 +327,25 @@ body {
 	$gridColumns:  12rem;
 	$gridRows: 12rem;
 	$gridGap: 1rem;
+	body {
+		background: linear-gradient(
+			107.56deg,
+			$bgColorLeft 0%,
+			#43c6ac 0.01%,
+			$bgColorRight 100%
+		);
+		background-repeat: none;
+		background-size: cover;
+		display: grid;
+		place-items: center;
+		height: 100vh;
+		font-family: "Montserrat Alternates", sans-serif;
+		.author {
+			color: $authorTextColor !important;
+		}
+		overflow: hidden;
+		
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
