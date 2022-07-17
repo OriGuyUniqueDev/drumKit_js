@@ -137,14 +137,51 @@ body .author {
     display: none;
   }
 }
-@media only screen and (min-width: 500px) and (max-width: 900px) {
+@media only screen and (min-width: 500px) and (max-width: 700px) {
   #root .main-container {
     margin-top: 5.5rem;
   }
   #root .main-container .main-container-buttons .btn-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 14rem);
-    grid-template-rows: repeat(3, 10rem);
+    grid-template-columns: repeat(3, 9rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 1rem;
+  }
+  #root .main-container .main-container-buttons .btn-wrapper .btn {
+    background-color: rgba(93, 162, 198, 0.45);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
+    -webkit-backdrop-filter: blur(11px);
+            backdrop-filter: blur(11px);
+    font-family: "Montserrat Alternates", sans-serif;
+    transition: background-color 0.35s ease-in-out, transform 0.1s ease-out;
+  }
+  #root .main-container .main-container-buttons .btn-wrapper .btn .text-number {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+  #root .main-container .main-container-buttons .btn-wrapper .btn .text-sound {
+    font-size: 1.2rem;
+  }
+  #root .main-container .main-container-buttons .btn-wrapper .btn:hover {
+    background-color: rgba(93, 162, 198, 0.8);
+  }
+  #root .main-container .main-container-buttons .btn-wrapper .btn:active {
+    transform: scale(1.05);
+  }
+  #root .root-bg-text {
+    display: none;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 899px) {
+  #root .main-container {
+    margin-top: 5.5rem;
+  }
+  #root .main-container .main-container-buttons .btn-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 12rem);
+    grid-template-rows: repeat(3, 12rem);
     gap: 1rem;
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn {

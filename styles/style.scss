@@ -198,7 +198,7 @@ body {
 		}
 	}
 }
-@media only screen and (min-width: 500px) and (max-width: 900px) {
+@media only screen and (min-width: 500px) and (max-width: 700px) {
 	$bgColorLeft: #43c6ac;
 	$bgColorRight: #191654;
 	$bgColorText: rgba(217, 217, 217, 0.1);
@@ -211,8 +211,64 @@ body {
 	$btnTextMarginBottom: 1.5rem;
 	$btnShadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
 	$authorTextColor: rgba(255, 255, 255, 0.2);
-	$gridColumns:  14rem;
-	$gridRows: 10rem;
+	$gridColumns:  9rem;
+	$gridRows: 9rem;
+	$gridGap: 1rem;
+	#root {
+		.main-container {
+			margin-top: 5.5rem;
+			.main-container-buttons {
+				.btn-wrapper {
+					display: grid;
+					grid-template-columns: repeat(3, $gridColumns);
+					grid-template-rows: repeat(3,$gridRows);
+					gap: $gridGap;
+					.btn {
+						background-color: $btnBgColor;
+						border: none;
+						border-radius: $btnBorderRadius;
+						box-shadow: $btnShadow;
+						backdrop-filter: blur(11px);
+						font-family: "Montserrat Alternates", sans-serif;
+						transition: background-color 0.35s ease-in-out,
+							transform 0.1s ease-out;
+						.text-number {
+							margin-bottom: $btnTextMarginBottom;
+							font-size: $btnTextFontSize;
+						}
+						.text-sound {
+							font-size: $btnSoundFontSize;
+						}
+					}
+					.btn:hover {
+						background-color: $btnBgColorHover;
+					}
+					.btn:active {
+						transform: scale(1.05);
+					}
+				}
+			}
+		}
+		.root-bg-text {
+			display: none;
+		}
+	}
+}
+@media only screen and (min-width: 701px) and (max-width: 899px) {
+	$bgColorLeft: #43c6ac;
+	$bgColorRight: #191654;
+	$bgColorText: rgba(217, 217, 217, 0.1);
+	$btnBgColor: rgba(93, 162, 198, 0.45);
+	$btnBgColorHover: rgba(93, 162, 198, 0.8);
+	$btnTextColor: rgba(0, 0, 0, 1);
+	$btnTextFontSize: 2.5rem;
+	$btnBorderRadius: 1rem;
+	$btnSoundFontSize: 1.2rem;
+	$btnTextMarginBottom: 1.5rem;
+	$btnShadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
+	$authorTextColor: rgba(255, 255, 255, 0.2);
+	$gridColumns:  12rem;
+	$gridRows: 12rem;
 	$gridGap: 1rem;
 	#root {
 		.main-container {
