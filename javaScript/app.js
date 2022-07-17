@@ -12,15 +12,16 @@ const soundArr = [hiHat,ride,openHat,snare,clap,kick,tom,boom,tink]
 
 btnArr.forEach((btn) => {
     if('ontouchstart' in window){
+        btn.addEventListener("click", () => {
+            playSound(+btn.childNodes[1].textContent);
+        });
+    }else{
         btn.addEventListener("touchstart", () => {
             playSound(+btn.childNodes[1].textContent);
             console.log(btn)
             btn.style.transition = "scale(1.05)"
         });
-    }else{
-        btn.addEventListener("click", () => {
-            playSound(+btn.childNodes[1].textContent);
-        });
+      
     }	
 });
 
