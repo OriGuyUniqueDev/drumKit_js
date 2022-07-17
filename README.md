@@ -1,7 +1,7 @@
 
 # Make a Beat
 
-Lets make some music !
+Lets make some music 🎧🥁
 Just tap the screen and create beats 🎵🎶🎹
 ## Screenshot
 
