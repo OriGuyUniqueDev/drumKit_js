@@ -63,7 +63,7 @@ body .author {
   color: rgba(217, 217, 217, 0.1);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   #root .main-container {
     margin-top: 5.5rem;
   }
@@ -137,7 +137,7 @@ body .author {
     display: none;
   }
 }
-@media only screen and (min-width: 401px) and (max-width: 900px) {
+@media only screen and (min-width: 501px) and (max-width: 900px) {
   #root .main-container {
     margin-top: 5.5rem;
   }
