@@ -1,5 +1,8 @@
 
 # Make a Beat
+
+Lets make some music !
+Just tap the screen and create beats 🎵🎶🎹
 ## Screenshot
 
 ![App Screenshot](https://github.com/OriGuyUniqueDev/drumKit_js/blob/main/assets/images/screenshot.png?raw=true)
