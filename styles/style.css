@@ -16,7 +16,7 @@ body {
   overflow: hidden;
 }
 body .author {
-  color: rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 #root .main-container {
@@ -64,19 +64,6 @@ body .author {
 }
 
 @media only screen and (max-width: 499px) {
-  body {
-    background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
-    background-repeat: none;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    font-family: "Montserrat Alternates", sans-serif;
-    overflow: hidden;
-  }
-  body .author {
-    color: rgba(255, 255, 255, 0.2) !important;
-  }
   #root .main-container {
     margin-top: 5.5rem;
   }
@@ -99,9 +86,11 @@ body .author {
   #root .main-container .main-container-buttons .btn-wrapper .btn .text-number {
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
+    color: rgb(0, 0, 0);
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn .text-sound {
     font-size: 1.2rem;
+    color: rgb(0, 0, 0);
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn:hover {
     background-color: rgba(93, 162, 198, 0.8);
@@ -114,19 +103,6 @@ body .author {
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
-  body {
-    background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
-    background-repeat: none;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    font-family: "Montserrat Alternates", sans-serif;
-    overflow: hidden;
-  }
-  body .author {
-    color: rgba(255, 255, 255, 0.2) !important;
-  }
   #root .main-container {
     margin-top: 5.5rem;
   }
@@ -149,9 +125,11 @@ body .author {
   #root .main-container .main-container-buttons .btn-wrapper .btn .text-number {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
+    color: rgb(0, 0, 0);
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn .text-sound {
     font-size: 1.2rem;
+    color: rgb(0, 0, 0);
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn:hover {
     background-color: rgba(93, 162, 198, 0.8);
@@ -164,19 +142,6 @@ body .author {
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 700px) {
-  body {
-    background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
-    background-repeat: none;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    font-family: "Montserrat Alternates", sans-serif;
-    overflow: hidden;
-  }
-  body .author {
-    color: rgba(255, 255, 255, 0.2) !important;
-  }
   #root .main-container {
     margin-top: 5.5rem;
   }
@@ -199,9 +164,11 @@ body .author {
   #root .main-container .main-container-buttons .btn-wrapper .btn .text-number {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
+    color: rgb(0, 0, 0);
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn .text-sound {
     font-size: 1.2rem;
+    color: rgb(0, 0, 0);
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn:hover {
     background-color: rgba(93, 162, 198, 0.8);
@@ -214,19 +181,6 @@ body .author {
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 899px) {
-  body {
-    background: linear-gradient(107.56deg, #43c6ac 0%, #43c6ac 0.01%, #191654 100%);
-    background-repeat: none;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    font-family: "Montserrat Alternates", sans-serif;
-    overflow: hidden;
-  }
-  body .author {
-    color: rgba(255, 255, 255, 0.2) !important;
-  }
   #root .main-container {
     margin-top: 5.5rem;
   }
@@ -249,9 +203,11 @@ body .author {
   #root .main-container .main-container-buttons .btn-wrapper .btn .text-number {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
+    color: rgb(0, 0, 0);
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn .text-sound {
     font-size: 1.2rem;
+    color: rgb(0, 0, 0);
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn:hover {
     background-color: rgba(93, 162, 198, 0.8);
