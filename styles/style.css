@@ -16,7 +16,7 @@ body {
   overflow: hidden;
 }
 body .author {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2) !important;
 }
 
 #root .main-container {

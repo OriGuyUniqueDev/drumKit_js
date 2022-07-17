@@ -34,7 +34,7 @@ body {
 	height: 100vh;
 	font-family: "Montserrat Alternates", sans-serif;
 	.author {
-		color: $authorTextColor;
+		color: $authorTextColor !important;
 	}
     overflow: hidden;
 	
