@@ -20,6 +20,9 @@ $gridGap: 2rem;
 	padding: 0;
 	box-sizing: border-box;
 }
+.text-number,.text-sound {
+	user-select: none;
+}
 body {
 	background: linear-gradient(
 		107.56deg,
@@ -104,6 +107,9 @@ body {
 	$gridColumns:  6rem;
 	$gridRows: 7rem;
 	$gridGap: 1rem;
+	.text-number,.text-sound {
+		user-select: none;
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
@@ -162,6 +168,9 @@ body {
 	$gridColumns:  17rem;
 	$gridRows: 13rem;
 	$gridGap: 1rem;
+	.text-number,.text-sound {
+		user-select: none;
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
@@ -220,6 +229,9 @@ body {
 	$gridColumns:  14rem;
 	$gridRows: 10rem;
 	$gridGap: 1rem;
+	.text-number,.text-sound {
+		user-select: none;
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
@@ -278,6 +290,9 @@ body {
 	$gridColumns:  9rem;
 	$gridRows: 9rem;
 	$gridGap: 1rem;
+	.text-number,.text-sound {
+		user-select: none;
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
@@ -336,6 +351,9 @@ body {
 	$gridColumns:  12rem;
 	$gridRows: 12rem;
 	$gridGap: 1rem;
+	.text-number,.text-sound {
+		user-select: none;
+	}
 	#root {
 		.main-container {
 			margin-top: 5.5rem;
