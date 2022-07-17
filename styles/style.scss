@@ -53,6 +53,7 @@ body {
 					border: none;
 					border-radius: $btnBorderRadius;
 					box-shadow: $btnShadow;
+					touch-action: manipulation;
 					backdrop-filter: blur(11px);
 					font-family: "Montserrat Alternates", sans-serif;
 					transition: background-color 0.35s ease-in-out,
