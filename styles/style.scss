@@ -12,7 +12,7 @@ $btnSoundFontSize: 1.75rem;
 $btnTextMarginBottom: 1.5rem;
 $btnShadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
 $authorTextColor: rgba(255, 255, 255, 0.2);
-$gridColumns: 25rem;
+$gridColumns: 21rem;
 $gridRows: 14.375rem;
 $gridGap: 2rem;
 * {
@@ -37,6 +37,7 @@ body {
 		color: $authorTextColor;
 	}
     overflow: hidden;
+	
 }
 #root {
 	.main-container {
@@ -210,8 +211,8 @@ body {
 	$btnTextMarginBottom: 1.5rem;
 	$btnShadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
 	$authorTextColor: rgba(255, 255, 255, 0.2);
-	$gridColumns:  15rem;
-	$gridRows: 10rem;
+	$gridColumns:  12rem;
+	$gridRows: 8rem;
 	$gridGap: 1rem;
 	#root {
 		.main-container {

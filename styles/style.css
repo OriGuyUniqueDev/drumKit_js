@@ -24,7 +24,7 @@ body .author {
 }
 #root .main-container .main-container-buttons .btn-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 25rem);
+  grid-template-columns: repeat(3, 21rem);
   grid-template-rows: repeat(3, 14.375rem);
   gap: 2rem;
 }
@@ -143,8 +143,8 @@ body .author {
   }
   #root .main-container .main-container-buttons .btn-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 15rem);
-    grid-template-rows: repeat(3, 10rem);
+    grid-template-columns: repeat(3, 12rem);
+    grid-template-rows: repeat(3, 8rem);
     gap: 1rem;
   }
   #root .main-container .main-container-buttons .btn-wrapper .btn {
