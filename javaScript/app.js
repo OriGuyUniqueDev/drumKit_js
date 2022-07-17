@@ -10,7 +10,7 @@ const tink = new Howl({src:['/assets/drumKit_sounds/tink.wav']});;
 const tom = new Howl({src:['/assets/drumKit_sounds/tom.wav']});;
 const soundArr = [hiHat,ride,openHat,snare,clap,kick,tom,boom,tink]
 btnArr.forEach((btn) => {
-    if(ontouchstart === null){
+    if(window.ontouchstart() === null){
         btn.addEventListener("click", () => {
             playSound(+btn.childNodes[1].textContent);
         });
