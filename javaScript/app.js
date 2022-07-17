@@ -1,13 +1,13 @@
 const btnArr = document.querySelectorAll(".btn");
 const hiHat = new Howl({src:['/assets/drumKit_sounds/hihat.wav']});
-const boom = new Audio("../assets/drumKit_sounds/boom.wav");
-const clap = new Audio("../assets/drumKit_sounds/clap.wav");
-const kick = new Audio("../assets/drumKit_sounds/kick.wav");
-const openHat = new Audio("../assets/drumKit_sounds/openhat.wav");
-const ride = new Audio("../assets/drumKit_sounds/ride.wav");
-const snare = new Audio("../assets/drumKit_sounds/snare.wav");
-const tink = new Audio("../assets/drumKit_sounds/tink.wav");
-const tom = new Audio("../assets/drumKit_sounds/tom.wav");
+const boom = new Howl({src:['/assets/drumKit_sounds/boom.wav']});
+const clap = new Howl({src:['/assets/drumKit_sounds/clap.wav']});
+const kick = new Howl({src:['/assets/drumKit_sounds/kick.wav']});
+const openHat = new Howl({src:['/assets/drumKit_sounds/openhat.wav']});
+const ride = new Howl({src:['/assets/drumKit_sounds/ride.wav']});;
+const snare = new Howl({src:['/assets/drumKit_sounds/snare.wav']});;
+const tink = new Howl({src:['/assets/drumKit_sounds/tink.wav']});;
+const tom = new Howl({src:['/assets/drumKit_sounds/tom.wav']});;
 const soundArr = [hiHat,ride,openHat,snare,clap,kick,tom,boom,tink]
 btnArr.forEach((btn) => {
 	btn.addEventListener("click", () => {
@@ -19,9 +19,7 @@ btnArr.forEach((btn) => {
 function playSound(num) {
     console.log(num)
     soundArr.forEach((sound) => {
-        hiHat.stop()
-        sound.currentTime = 0
-        sound.pause()
+        sound.stop()
     })
 	switch (num) {
 		case 1:
