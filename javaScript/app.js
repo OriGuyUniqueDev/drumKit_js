@@ -11,8 +11,12 @@ const tom = new Howl({src:['/assets/drumKit_sounds/tom.wav']});;
 const soundArr = [hiHat,ride,openHat,snare,clap,kick,tom,boom,tink]
 btnArr.forEach((btn) => {
 	btn.addEventListener("click", () => {
-		console.log("Click");
-		console.log(playSound(+btn.childNodes[1].textContent)) ;
+		playSound(+btn.childNodes[1].textContent);
+	});
+	btn.addEventListener("touchstart", () => {
+		playSound(+btn.childNodes[1].textContent);
+        console.log(btn)
+        btn.style.transition = "scale(1.05)"
 	});
 });
 
