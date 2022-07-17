@@ -29,7 +29,7 @@ body .author {
   gap: 2rem;
 }
 #root .main-container .main-container-buttons .btn-wrapper .btn {
-  background-color: rgba(93, 162, 198, 0.45);
+  background-color: rgba(93, 162, 198, 0.4509803922);
   border: none;
   border-radius: 1rem;
   box-shadow: 0px 1rem 1rem 0.1rem rgba(29, 65, 83, 0.5);
