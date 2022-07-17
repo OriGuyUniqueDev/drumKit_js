@@ -10,14 +10,19 @@ const tink = new Howl({src:['/assets/drumKit_sounds/tink.wav']});;
 const tom = new Howl({src:['/assets/drumKit_sounds/tom.wav']});;
 const soundArr = [hiHat,ride,openHat,snare,clap,kick,tom,boom,tink]
 btnArr.forEach((btn) => {
-	btn.addEventListener("click", () => {
-		playSound(+btn.childNodes[1].textContent);
-	});
-	btn.addEventListener("touchstart", () => {
-		playSound(+btn.childNodes[1].textContent);
-        console.log(btn)
-        btn.style.transition = "scale(1.05)"
-	});
+    if(ontouchstart === null){
+        btn.addEventListener("click", () => {
+            playSound(+btn.childNodes[1].textContent);
+        });
+    }else{
+        btn.addEventListener("touchstart", () => {
+            playSound(+btn.childNodes[1].textContent);
+            console.log(btn)
+            btn.style.transition = "scale(1.05)"
+        });
+    }
+	
+	
 });
 
 function playSound(num) {
