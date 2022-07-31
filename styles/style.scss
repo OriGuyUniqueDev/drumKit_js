@@ -15,6 +15,7 @@ $authorTextColor: rgba(255, 255, 255, 0.2);
 $gridColumns: 21rem;
 $gridRows: 14.375rem;
 $gridGap: 2rem;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -75,6 +76,7 @@ body {
 				.btn:active {
 					transform: scale(1.05);
 				}
+
 			}
 		}
 	}

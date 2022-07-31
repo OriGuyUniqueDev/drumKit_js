@@ -14,10 +14,24 @@ btnArr.forEach((btn) => {
         btn.addEventListener("click", () => {
             playSound(+btn.childNodes[1].textContent);
         });
+
+});
+window.addEventListener("keydown", (e) => {
+	if(+e.key !== 0) {
+		playSound(+e.key);
+		btnArr[+e.key - 1].style.transform = "scale(1.05)"
+		btnArr[+e.key - 1].style.background = "rgba(93, 162, 198, 0.8)"
+	}
+	
+});
+window.addEventListener("keyup", (e) => {
+	if(+e.key !== 0) {
+		btnArr[+e.key - 1].style.transform = "scale(1)"
+		btnArr[+e.key - 1].style.background = "#5da2c673"
+	}
 });
 
 function playSound(num) {
-    console.log(num)
     soundArr.forEach((sound) => {
         sound.stop()
     })
